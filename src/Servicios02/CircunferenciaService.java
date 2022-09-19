@@ -19,11 +19,13 @@ public class CircunferenciaService {
         return new Circunferencia(radio);
 
     }
-    public void area(Circunferencia c1){
-        double area = Math.PI * (c1.getRadio()*c1.getRadio());
-        System.out.println("El area de la Cirunferencia es: " + Math.round(area * 100d) / 100d + "cm2");
+
+    public void area(Circunferencia c1) {
+        double area = Math.PI * (c1.getRadio() * c1.getRadio());
+        System.out.println("El area de la Cirunferencia es: " + df.format(area) + "cm2");
     }
-    public void perimetro(Circunferencia c1){
+
+    public void perimetro(Circunferencia c1) {
         double perimetro = 2 * Math.PI * c1.getRadio();
         System.out.println("El perimetro de la Circunferencia es: " + df.format(perimetro) + "cm");
     }

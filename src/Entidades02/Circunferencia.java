@@ -5,7 +5,7 @@ package Entidades02;
  * @author NeuenMartinez
  */
 public class Circunferencia {
-    
+
     private double radio;
 
     public Circunferencia(double radio) {
@@ -24,6 +24,5 @@ public class Circunferencia {
     public String toString() {
         return "Circunferencia{" + "el radio de la Circunferencia es: " + radio + '}';
     }
-    
-    
+
 }
